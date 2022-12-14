@@ -6,7 +6,8 @@ Docker image for [Gatling](https://gatling.io/) load testing tool
 
 ## Docker Tags
 
-* `3.8.4`, `latest` ([Dockerfile](https://github.com/ladamalina/gatling/blob/master/3.8.4/Dockerfile))
+* `3.9.0`, `latest` ([Dockerfile](https://github.com/ladamalina/gatling/blob/master/3.9.0/Dockerfile))
+* `3.8.4` ([Dockerfile](https://github.com/ladamalina/gatling/blob/master/3.8.4/Dockerfile))
 * `3.8.3` ([Dockerfile](https://github.com/ladamalina/gatling/blob/master/3.8.3/Dockerfile))
 * `3.8.2` ([Dockerfile](https://github.com/ladamalina/gatling/blob/master/3.8.2/Dockerfile))
 * `3.8.1` ([Dockerfile](https://github.com/ladamalina/gatling/blob/master/3.8.1/Dockerfile))
@@ -28,7 +29,7 @@ docker pull ladamalina/gatling:latest
 docker pull ladamalina/gatling
 
 # Specific version:
-docker pull ladamalina/gatling:3.8.4
+docker pull ladamalina/gatling:3.9.0
 ```
 
 * [Alternatively] Build an image from Dockerfile:
