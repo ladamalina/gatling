@@ -6,7 +6,8 @@ Docker image for [Gatling](https://gatling.io/) load testing tool
 
 ## Docker Tags
 
-* `3.9.2`, `latest` ([Dockerfile](https://github.com/ladamalina/gatling/blob/master/3.9.2/Dockerfile))
+* `3.9.3`, `latest` ([Dockerfile](https://github.com/ladamalina/gatling/blob/master/3.9.3/Dockerfile))
+* `3.9.2` ([Dockerfile](https://github.com/ladamalina/gatling/blob/master/3.9.2/Dockerfile))
 * `3.9.1` ([Dockerfile](https://github.com/ladamalina/gatling/blob/master/3.9.1/Dockerfile))
 * `3.9.0` ([Dockerfile](https://github.com/ladamalina/gatling/blob/master/3.9.0/Dockerfile))
 * `3.8.4` ([Dockerfile](https://github.com/ladamalina/gatling/blob/master/3.8.4/Dockerfile))
