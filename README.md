@@ -6,7 +6,8 @@ Docker image for [Gatling](https://gatling.io/) load testing tool
 
 ## Docker Tags
 
-* `3.9.3`, `latest` ([Dockerfile](https://github.com/ladamalina/gatling/blob/master/3.9.3/Dockerfile))
+* `3.9.4`, `latest` ([Dockerfile](https://github.com/ladamalina/gatling/blob/master/3.9.4/Dockerfile))
+* `3.9.3`, ([Dockerfile](https://github.com/ladamalina/gatling/blob/master/3.9.3/Dockerfile))
 * `3.9.2` ([Dockerfile](https://github.com/ladamalina/gatling/blob/master/3.9.2/Dockerfile))
 * `3.9.1` ([Dockerfile](https://github.com/ladamalina/gatling/blob/master/3.9.1/Dockerfile))
 * `3.9.0` ([Dockerfile](https://github.com/ladamalina/gatling/blob/master/3.9.0/Dockerfile))
@@ -32,7 +33,7 @@ docker pull ladamalina/gatling:latest
 docker pull ladamalina/gatling
 
 # Specific version:
-docker pull ladamalina/gatling:3.9.2
+docker pull ladamalina/gatling:3.9.4
 ```
 
 * [Alternatively] Build an image from Dockerfile:
@@ -45,23 +46,24 @@ docker build -t="ladamalina/gatling" github.com/ladamalina/gatling
 
 Use image to run container
 
-```
+```bash
 docker run -it --rm ladamalina/gatling
 ```
 
 Mount configuration and simulation files from the host machine and run gatling in interactive mode
 
-```
-docker run -it --rm -v $(pwd)/conf:/opt/gatling/conf \
--v $(pwd)/user-files/resources:/opt/gatling/user-files/resources \
--v $(pwd)/user-files/simulations:/opt/gatling/user-files/simulations \
--v $(pwd)/user-files/lib:/opt/gatling/user-files/lib \
--v $(pwd)/results:/opt/gatling/results \
-ladamalina/gatling
+```bash
+docker run -it --rm \
+    -v $(pwd)/conf:/opt/gatling/conf \
+    -v $(pwd)/user-files/resources:/opt/gatling/user-files/resources \
+    -v $(pwd)/user-files/simulations:/opt/gatling/user-files/simulations \
+    -v $(pwd)/user-files/lib:/opt/gatling/user-files/lib \
+    -v $(pwd)/results:/opt/gatling/results \
+    ladamalina/gatling
 ```
 
 Use the `-e` switch to use JAVA_OPTS to pass parameters to gatling tests
 
-```
+```bash
 docker run -e JAVA_OPTS="-Dusers=10" -it --rm ladamalina/gatling
 ```
