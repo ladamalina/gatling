@@ -1,4 +1,4 @@
-name: Build, scan & publish image
+name: Build, scan & publish image to Dockerhub
 on:
   push:
     tags:
@@ -23,15 +23,6 @@ jobs:
           name: ladamalina/gatling
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
-          tag_names: true
-
-      - name: Publish to Github Registry
-        uses: elgohr/Publish-Docker-Github-Action@v5
-        with:
-          name: ladamalina/gatling
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
-          registry: ghcr.io
           tag_names: true
 
       - name: Authenticate to Docker
