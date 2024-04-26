@@ -2,12 +2,12 @@ Docker image for [Gatling](https://gatling.io/) load testing tool
 
 ## Base Docker Image
 
-[openjdk:17-jdk-alpine](https://hub.docker.com/_/openjdk)
+[openjdk:19-jdk-alpine](https://hub.docker.com/_/openjdk)
 
 ## Supported tags and respective `Dockerfile` links
 
-* [`latest`](https://github.com/ladamalina/gatling/blob/master/Dockerfile)
-* [`3.11.1`](https://github.com/ladamalina/gatling/blob/master/3.11.1/Dockerfile)
+* [`latest`](https://github.com/ladamalina/gatling/blob/master/3.11.1/Dockerfile)
+* [`3.11.1`](https://github.com/ladamalina/gatling/blob/master/3.11.1/Dockerfile), [`3.11.1-jdk19`](https://github.com/ladamalina/gatling/blob/master/3.11.1-jdk19/Dockerfile)
 * [`3.10.5`](https://github.com/ladamalina/gatling/blob/master/3.10.5/Dockerfile), [`3.10.4`](https://github.com/ladamalina/gatling/blob/master/3.10.4/Dockerfile), [`3.10.3`](https://github.com/ladamalina/gatling/blob/master/3.10.3/Dockerfile), [`3.10.2`](https://github.com/ladamalina/gatling/blob/master/3.10.2/Dockerfile), [`3.10.1`](https://github.com/ladamalina/gatling/blob/master/3.10.1/Dockerfile), [`3.10.0`](https://github.com/ladamalina/gatling/blob/master/3.10.0/Dockerfile)
 * [`3.9.5`](https://github.com/ladamalina/gatling/blob/master/3.9.5/Dockerfile), [`3.9.4`](https://github.com/ladamalina/gatling/blob/master/3.9.4/Dockerfile), [`3.9.3`](https://github.com/ladamalina/gatling/blob/master/3.9.3/Dockerfile), [`3.9.2`](https://github.com/ladamalina/gatling/blob/master/3.9.2/Dockerfile), [`3.9.1`](https://github.com/ladamalina/gatling/blob/master/3.9.1/Dockerfile), [`3.9.0`](https://github.com/ladamalina/gatling/blob/master/3.9.0/Dockerfile)
 * [`3.8.4`](https://github.com/ladamalina/gatling/blob/master/3.8.4/Dockerfile), [`3.8.3`](https://github.com/ladamalina/gatling/blob/master/3.8.3/Dockerfile), [`3.8.2`](https://github.com/ladamalina/gatling/blob/master/3.8.2/Dockerfile), [`3.8.1`](https://github.com/ladamalina/gatling/blob/master/3.8.1/Dockerfile), [`3.8.0`](https://github.com/ladamalina/gatling/blob/master/3.8.0/Dockerfile)
