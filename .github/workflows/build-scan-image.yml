@@ -1,9 +1,5 @@
 name: Build & scan image
 on:
-  push:
-    tags:
-      - latest
-      - v*
   pull_request:
     branches: [ "**" ]
 
