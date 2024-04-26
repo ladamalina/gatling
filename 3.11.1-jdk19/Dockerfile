@@ -13,7 +13,7 @@ RUN apk upgrade --update-cache --available && \
     rm -rf /var/cache/apk/*
 
 # working directory for gatling
-WORKDIR /opt
+WORKDIR /opt/
 
 # gating version
 ENV GATLING_VERSION 3.11.1
