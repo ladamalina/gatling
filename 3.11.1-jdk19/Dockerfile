@@ -7,6 +7,10 @@ FROM openjdk:19-jdk-alpine
 
 MAINTAINER Nadezhda Ryabtsova <nadezhdaryabtsova@gmail.com>
 
+# docker scout recommendations
+RUN apk add --update openssl libtasn1 libretls zlib && \
+    rm -rf /var/cache/apk/*
+
 # working directory for gatling
 WORKDIR /opt
 
