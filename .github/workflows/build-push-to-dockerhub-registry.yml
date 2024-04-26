@@ -1,4 +1,4 @@
-name: Build & push image to Github registry
+name: Build & push image to Dockerhub
 on:
   push:
     tags:
@@ -8,16 +8,17 @@ on:
 jobs:
   update:
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Publish to Github Registry
+      - name: Publish to Dockerhub Registry
         uses: elgohr/Publish-Docker-Github-Action@v5
         with:
           name: ladamalina/gatling
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
-          registry: ghcr.io
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_PASSWORD }}
           tag_names: true
