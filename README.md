@@ -2,12 +2,12 @@ Docker image for [Gatling](https://gatling.io/) load testing tool
 
 ## Base Docker Image
 
-[openjdk:23-jdk-oraclelinux9](https://hub.docker.com/_/openjdk)
+[amazoncorretto:22-alpine-jdk](https://hub.docker.com/_/amazoncorretto)
 
 ## Supported tags and respective `Dockerfile` links
 
-* [`latest`](https://github.com/ladamalina/gatling/blob/master/3.11.1-jdk23/Dockerfile)
-* [`3.11.1`](https://github.com/ladamalina/gatling/blob/master/3.11.1/Dockerfile), [`3.11.1-jdk19`](https://github.com/ladamalina/gatling/blob/master/3.11.1-jdk19/Dockerfile), [`3.11.1-jdk21`](https://github.com/ladamalina/gatling/blob/master/3.11.1-jdk21/Dockerfile), [`3.11.1-jdk23`](https://github.com/ladamalina/gatling/blob/master/3.11.1-jdk23/Dockerfile)
+* [`latest`](https://github.com/ladamalina/gatling/blob/master/3.11.1-jdk22/Dockerfile)
+* [`3.11.1`](https://github.com/ladamalina/gatling/blob/master/3.11.1/Dockerfile), [`3.11.1-jdk19`](https://github.com/ladamalina/gatling/blob/master/3.11.1-jdk19/Dockerfile), [`3.11.1-jdk21`](https://github.com/ladamalina/gatling/blob/master/3.11.1-jdk21/Dockerfile), [`3.11.1-jdk22`](https://github.com/ladamalina/gatling/blob/master/3.11.1-jdk22/Dockerfile), [`3.11.1-jdk23`](https://github.com/ladamalina/gatling/blob/master/3.11.1-jdk23/Dockerfile)
 * [`3.10.5`](https://github.com/ladamalina/gatling/blob/master/3.10.5/Dockerfile), [`3.10.4`](https://github.com/ladamalina/gatling/blob/master/3.10.4/Dockerfile), [`3.10.3`](https://github.com/ladamalina/gatling/blob/master/3.10.3/Dockerfile), [`3.10.2`](https://github.com/ladamalina/gatling/blob/master/3.10.2/Dockerfile), [`3.10.1`](https://github.com/ladamalina/gatling/blob/master/3.10.1/Dockerfile), [`3.10.0`](https://github.com/ladamalina/gatling/blob/master/3.10.0/Dockerfile)
 * [`3.9.5`](https://github.com/ladamalina/gatling/blob/master/3.9.5/Dockerfile), [`3.9.4`](https://github.com/ladamalina/gatling/blob/master/3.9.4/Dockerfile), [`3.9.3`](https://github.com/ladamalina/gatling/blob/master/3.9.3/Dockerfile), [`3.9.2`](https://github.com/ladamalina/gatling/blob/master/3.9.2/Dockerfile), [`3.9.1`](https://github.com/ladamalina/gatling/blob/master/3.9.1/Dockerfile), [`3.9.0`](https://github.com/ladamalina/gatling/blob/master/3.9.0/Dockerfile)
 * [`3.8.4`](https://github.com/ladamalina/gatling/blob/master/3.8.4/Dockerfile), [`3.8.3`](https://github.com/ladamalina/gatling/blob/master/3.8.3/Dockerfile), [`3.8.2`](https://github.com/ladamalina/gatling/blob/master/3.8.2/Dockerfile), [`3.8.1`](https://github.com/ladamalina/gatling/blob/master/3.8.1/Dockerfile), [`3.8.0`](https://github.com/ladamalina/gatling/blob/master/3.8.0/Dockerfile)

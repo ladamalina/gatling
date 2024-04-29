@@ -1,1 +1,1 @@
-3.11.1-jdk23/Dockerfile
+3.11.1-jdk22/Dockerfile
