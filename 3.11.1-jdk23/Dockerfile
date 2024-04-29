@@ -3,22 +3,19 @@
 # Documentation: https://gatling.io/docs/3.2/
 # Cheat sheet: https://gatling.io/docs/3.2/cheat-sheet/
 
-FROM openjdk:21-jdk-slim
+FROM openjdk:23-oracle
 
 MAINTAINER Nadezhda Ryabtsova <nadezhdaryabtsova@gmail.com>
-
-# working directory for gatling
-WORKDIR /opt/
 
 # gating version
 ENV GATLING_VERSION 3.11.1
 
-# create directory for gatling install
-RUN mkdir -p gatling
+# working directory for gatling
+WORKDIR /opt/
 
 # install gatling
-RUN apt-get update && \
-    apt-get install -y --no-install-recommends wget bash libc6 unzip && \
+RUN mkdir -p gatling && \
+    microdnf install wget bash glibc unzip && \
     mkdir -p /tmp/downloads && \
     wget -q -O /tmp/downloads/gatling-$GATLING_VERSION.zip \
     https://repo1.maven.org/maven2/io/gatling/highcharts/gatling-charts-highcharts-bundle/$GATLING_VERSION/gatling-charts-highcharts-bundle-$GATLING_VERSION.zip && \
@@ -26,7 +23,7 @@ RUN apt-get update && \
     unzip /tmp/downloads/gatling-$GATLING_VERSION.zip && \
     mv /tmp/archive/gatling-charts-highcharts-bundle-$GATLING_VERSION/* /opt/gatling/ && \
     rm -rf /tmp/* && \
-    rm -rf /var/lib/apt/lists/*
+    microdnf clean all
 
 # change context to gatling directory
 WORKDIR  /opt/gatling
