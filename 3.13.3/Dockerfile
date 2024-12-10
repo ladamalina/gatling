@@ -3,7 +3,7 @@
 # Documentation: https://gatling.io/docs/3.2/
 # Cheat sheet: https://gatling.io/docs/3.2/cheat-sheet/
 
-FROM amazoncorretto:22-alpine-jdk
+FROM amazoncorretto:23-alpine-jdk
 
 MAINTAINER Nadezhda Ryabtsova <nadezhdaryabtsova@gmail.com>
 
