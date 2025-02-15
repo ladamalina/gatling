@@ -6,7 +6,8 @@ Docker image for [Gatling](https://gatling.io/) load testing tool
 
 ## Supported tags and respective `Dockerfile` links
 
-* [`latest`](https://github.com/ladamalina/gatling/blob/master/3.13.3/Dockerfile)
+* [`latest`](https://github.com/ladamalina/gatling/blob/master/3.13.4/Dockerfile)
+* [`3.13.4`](https://github.com/ladamalina/gatling/blob/master/3.13.3/Dockerfile)
 * [`3.13.3`](https://github.com/ladamalina/gatling/blob/master/3.13.3/Dockerfile)
 * [`3.13.1`](https://github.com/ladamalina/gatling/blob/master/3.13.1/Dockerfile)
 * [`3.12.0`](https://github.com/ladamalina/gatling/blob/master/3.12.0/Dockerfile)
