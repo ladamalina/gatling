@@ -6,11 +6,9 @@ Docker image for [Gatling](https://gatling.io/) load testing tool
 
 ## Supported tags and respective `Dockerfile` links
 
-* [`latest`](https://github.com/ladamalina/gatling/blob/master/3.13.5/Dockerfile)
-* [`3.13.5`](https://github.com/ladamalina/gatling/blob/master/3.13.5/Dockerfile)
-* [`3.13.4`](https://github.com/ladamalina/gatling/blob/master/3.13.4/Dockerfile)
-* [`3.13.3`](https://github.com/ladamalina/gatling/blob/master/3.13.3/Dockerfile)
-* [`3.13.1`](https://github.com/ladamalina/gatling/blob/master/3.13.1/Dockerfile)
+* [`latest`](https://github.com/ladamalina/gatling/blob/master/3.14.0/Dockerfile)
+* [`3.14.0`](https://github.com/ladamalina/gatling/blob/master/3.14.0/Dockerfile)
+* [`3.13.5`](https://github.com/ladamalina/gatling/blob/master/3.13.5/Dockerfile), [`3.13.4`](https://github.com/ladamalina/gatling/blob/master/3.13.4/Dockerfile), [`3.13.3`](https://github.com/ladamalina/gatling/blob/master/3.13.3/Dockerfile), [`3.13.1`](https://github.com/ladamalina/gatling/blob/master/3.13.1/Dockerfile)
 * [`3.12.0`](https://github.com/ladamalina/gatling/blob/master/3.12.0/Dockerfile)
 * [`3.11.5`](https://github.com/ladamalina/gatling/blob/master/3.11.5/Dockerfile), [`3.11.4`](https://github.com/ladamalina/gatling/blob/master/3.11.4/Dockerfile), [`3.11.3`](https://github.com/ladamalina/gatling/blob/master/3.11.3/Dockerfile), [`3.11.2`](https://github.com/ladamalina/gatling/blob/master/3.11.2/Dockerfile), [`3.11.1`](https://github.com/ladamalina/gatling/blob/master/3.11.1/Dockerfile), [`3.11.1-jdk19`](https://github.com/ladamalina/gatling/blob/master/3.11.1-jdk19/Dockerfile), [`3.11.1-jdk21`](https://github.com/ladamalina/gatling/blob/master/3.11.1-jdk21/Dockerfile), [`3.11.1-jdk22`](https://github.com/ladamalina/gatling/blob/master/3.11.1-jdk22/Dockerfile), [`3.11.1-jdk23`](https://github.com/ladamalina/gatling/blob/master/3.11.1-jdk23/Dockerfile)
 * [`3.10.5`](https://github.com/ladamalina/gatling/blob/master/3.10.5/Dockerfile), [`3.10.4`](https://github.com/ladamalina/gatling/blob/master/3.10.4/Dockerfile), [`3.10.3`](https://github.com/ladamalina/gatling/blob/master/3.10.3/Dockerfile), [`3.10.2`](https://github.com/ladamalina/gatling/blob/master/3.10.2/Dockerfile), [`3.10.1`](https://github.com/ladamalina/gatling/blob/master/3.10.1/Dockerfile), [`3.10.0`](https://github.com/ladamalina/gatling/blob/master/3.10.0/Dockerfile)
@@ -34,7 +32,7 @@ docker pull ladamalina/gatling:latest
 docker pull ladamalina/gatling
 
 # Specific version:
-docker pull ladamalina/gatling:3.12.0
+docker pull ladamalina/gatling:3.13.5
 ```
 
 * [Alternatively] Build an image from Dockerfile:
