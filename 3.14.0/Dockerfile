@@ -19,7 +19,7 @@ RUN mkdir -p gatling && \
     apk add --update wget bash libc6-compat && \
     mkdir -p /tmp/downloads && \
     wget -q -O /tmp/downloads/gatling-$GATLING_VERSION.zip \
-    https://repo1.maven.org/maven2/io/gatling/highcharts/gatling-charts-highcharts-bundle/$GATLING_VERSION/gatling-charts-highcharts-bundle-$GATLING_VERSION.zip && \
+    https://repo1.maven.org/maven2/io/gatling/highcharts/gatling-charts-highcharts-bundle/$GATLING_VERSION/gatling-charts-highcharts-bundle-$GATLING_VERSION-bundle.zip && \
     mkdir -p /tmp/archive && cd /tmp/archive && \
     unzip /tmp/downloads/gatling-$GATLING_VERSION.zip && \
     mv /tmp/archive/gatling-charts-highcharts-bundle-$GATLING_VERSION/* /opt/gatling/ && \
